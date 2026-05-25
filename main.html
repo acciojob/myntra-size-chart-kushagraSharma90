@@ -1,16 +1,214 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architecture Webpage</title>
 
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#dfe5de;
+      display:flex;
+      justify-content:center;
+      padding:20px;
+    }
+
+    .container{
+      width:1100px;
+      background:#e5ebe4;
+      padding:10px;
+      border:2px solid #bfc8bf;
+    }
+
+    /* Top Image */
+    .imageContainer{
+      width:100%;
+      margin-bottom:20px;
+    }
+
+    .imageContainer img{
+      width:100%;
+      height:350px;
+      object-fit:cover;
+      display:block;
+    }
+
+    /* Table Styling */
+    table{
+      width:100%;
+      border-collapse:collapse;
+      background:#dfe5de;
+    }
+
+    td{
+      border:1px solid #aeb5ad;
+      vertical-align:top;
+      padding:8px;
+    }
+
+    /* Image Columns */
+    .side-img{
+      width:200px;
+    }
+
+    .side-img img{
+      width:100%;
+      height:150px;
+      object-fit:cover;
+      display:block;
+    }
+
+    /* Middle Text */
+    .content{
+      width:600px;
+      text-align:center;
+      color:#222;
+    }
+
+    .content h2{
+      margin-bottom:15px;
+      font-size:32px;
+    }
+
+    .content p{
+      font-size:20px;
+      line-height:1.5;
+      margin-top:10px;
+    }
+
+    .small-text{
+      font-size:18px;
+      text-align:left;
+      margin-top:10px;
+    }
+
+    a{
+      color:purple;
+      text-decoration:none;
+    }
+
+    a:hover{
+      text-decoration:underline;
+    }
+
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <div class="container">
+
+    <!-- Top Image Container -->
+    <div class="imageContainer">
+      <img 
+        src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1200&auto=format&fit=crop"
+        alt="Architecture Design"
+      >
+    </div>
+
+    <!-- Architecture Table -->
+    <table>
+
+      <!-- Row 1 -->
+      <tr>
+
+        <!-- First Column -->
+        <td width="200" class="side-img">
+          <img 
+            src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=600&auto=format&fit=crop"
+            alt="Building Design"
+          >
+        </td>
+
+        <!-- Middle Column -->
+        <td width="600" class="content">
+
+          <p>
+            Unit #5 - Floor Plans<br>
+            A. Kitchen<br>
+            B. Bathroom<br>
+            C. Using "Slabs"<br>
+            D. Georgian Home<br>
+            E. Sketching Assignment #5
+          </p>
+
+        </td>
+
+        <!-- Last Column -->
+        <td width="200" class="side-img">
+          <img 
+            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=600&auto=format&fit=crop"
+            alt="Interior Architecture"
+          >
+        </td>
+
+      </tr>
+
+      <!-- Row 2 -->
+      <tr>
+
+        <!-- First Column -->
+        <td width="200" class="side-img">
+
+          <img 
+            src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=600&auto=format&fit=crop"
+            alt="House Plan"
+          >
+
+          <div class="small-text">
+            <strong>HousePlans.com</strong> The largest source for quality
+            affordable ready-made house plans.
+            A great place to surf for space planning ideas<br>
+            <a href="#">learn more</a>
+          </div>
+
+        </td>
+
+        <!-- Middle Column -->
+        <td width="600" class="content">
+
+          <h2>Objective</h2>
+
+          <p>
+            Discuss factors that are important in the design of bedrooms.
+            Plan the size and location of closets for a typical residence.
+            Plan a furniture arrangement for a room. Implement important
+            design considerations for bathrooms. Plan a bathroom that follows
+            solid design principles.
+          </p>
+
+        </td>
+
+        <!-- Last Column -->
+        <td width="200" class="side-img">
+
+          <img 
+            src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=600&auto=format&fit=crop"
+            alt="Green Floor"
+          >
+
+          <div class="small-text">
+            <strong>Green Floor</strong><br>
+            FreeGreen.com offers both sponsored and non-sponsored floor plans.
+            Their goal is to provide consumers with free solutions to their
+            green architectural needs.<br>
+            <a href="#">learn more</a>
+          </div>
+
+        </td>
+
+      </tr>
+
+    </table>
+
+  </div>
 
 </body>
-
 </html>
